@@ -1,62 +1,86 @@
 @font-face {
-    font-family: playright;
-    src: url(/fonts/Playwrite_IN/PlaywriteIN-VariableFont_wght.ttf);
+    font-family: playwrite;
+    src: url(../fonts/Playwrite_IN/PlaywriteIN-VariableFont_wght.ttf);
 }
 
-body {
+body{
     font-family: monospace;
-    font-size: 1.5em;
-    background-image: linear-gradient(palevioletred, pink);
+    font-size: 1rem;
+    justify-content: center;
+    background-color: rgb(84, 57, 131);
+    color: wheat;
 }
 
-header {
-    background-color: pink;
-}
-
-.header-image { 
+ul {
+    list-style: none;
     display: flex;
-    align-items: center;
-    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10vw;
+}
+
+a {
+    color: inherit;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 nav {
-    background-color: palevioletred;
-    color: white;
+    font-size: 1.5rem;
+    background-color: rgb(84, 57, 131);
 }
 
-main {
-    background-color: palegoldenrod;
-    font-size: 2em;
+h1 {
+    font-family: playwrite;
+    font-size: 3.5rem;
+    text-align: center;
+    color: wheat;
 }
 
-footer {
-    background-color: palevioletred;
+header img {
+    border-radius: 25%;
+    margin: auto;
+    border: 1px solid black;
+    align-items: center;
+    display: flex;
+    margin-top: 5rem;
 }
 
 li {
     display: inline;
-    width: 100vw;
-    list-style: none;
-    margin: 0 10vw;
+    width: 15vw;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-h1 {
-    font-family: playright;
-    text-align: center;
-    color: black;
-    background-color: white;
-}
-
-p {
-    line-height: 10vh;
-}
-
-.photo-library {
+ header {
     display: flex;
-    justify-content: center;
-}
+    flex-direction: column;
+    background-color: rgb(84, 57, 131);
+ }
+
+ main {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    width: 60vw;
+    font-size: 1.5rem;;
+    background-color: rgb(84, 57, 131);
+ }
+ 
+ footer {
+    position: fixed;
+    bottom: 5px;
+    background-color: wheat;
+    color: rgb(84, 57, 131);
+    width: 100vw;
+ }
+
+ main img {
+    vertical-align: middle;
+ }
+
+ p {
+    line-height: 2.5vh;
+ }

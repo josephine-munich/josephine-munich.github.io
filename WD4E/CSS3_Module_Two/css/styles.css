@@ -1,89 +1,68 @@
 @font-face {
-    font-family: playright;
-    src: url(/fonts/Playwrite_IN/PlaywriteIN-VariableFont_wght.ttf);
+    font-family: atma;
+    src: url("/WD4E/CSS3_Module_Two/fonts/Atma/Atma-Bold.ttf");
+    src: url("/WD4E/CSS3_Module_Two/fonts/Atma/Atma-Light.ttf");
+    src: url("/WD4E/CSS3_Module_Two/fonts/Atma/Atma-Regular.ttf");
+    src: url("/WD4E/CSS3_Module_Two/fonts/Atma/Atma-Medium.ttf");
+    src: url("/WD4E/CSS3_Module_Two/fonts/Atma/Atma-SemiBold.ttf");
+}
+
+.skip {
+    display: none;
 }
 
 body {
-    font-family: monospace;
-    font-size: 1.5em;
-    background-image: linear-gradient(palevioletred, pink);
+    font-family: atma;
+    color: purple;
 }
 
-header {
-    background-color: pink;
+p:hover, h1:hover {
+    color: pink;
 }
 
-.header-image { 
-    display: flex;
-    align-items: center;
-    margin: auto;
+img:hover {
+    border: 5px solid pink;;
 }
 
-nav {
-    background-color: palevioletred;
-    color: white;
-    display: inline-block;
-    width: 80%;
-}
-
-nav img {
-    width: 10%;
-}
-
-main {
-    background-color: palegoldenrod;
-    font-size: 2em;
-}
-
-footer {
-    background-color: palevioletred;
-}
-
-li {
-    /* display: inline;
-    width: 100vw;
+ul {
     list-style: none;
-    margin: 0 10vw; */
+    padding: 0;
 }
 
-a {
+nav a {
     text-decoration: none;
+    text-transform: uppercase;
     color: inherit;
 }
 
-h1 {
-    font-family: playright;
-    text-align: center;
-    color: black;
-    background-color: white;
+nav {
+    position: fixed;
+    bottom: 2.5%;
+    right: 2.5%;
 }
 
-p {
-    line-height: 10vh;
-}
-
-.grid {
-    /* display: flex; */
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 40% 40%;
-    column-gap: 1rem;
-    row-gap: .5rem;
+main {
+    text-align: justify;
     align-items: center;
+    width: 25vw;
+    margin: auto;
+    column-gap: 2.5vw;
 }
 
-.grid img {
-    width: 100%;
+main img {
+    vertical-align: middle;
 }
 
-.flex {
+header {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-between;
-
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25vh;
 }
 
-.flex img {
-    width: 17%;
+footer {
+    position: fixed;
+    bottom: 2.5%;
+    left: 2.5%;
 }
+
